@@ -46,7 +46,7 @@ describe("Nethermind bot deployment agent", () => {
           type: FindingType.Info,
           metadata: {
             agentId: mockNethermindBotDeployment.args.agentId,
-            owner: mockNethermindBotDeployment.args.owner,
+            metadata: mockNethermindBotDeployment.args.metadata,
             chainIds: mockNethermindBotDeployment.args.chainIds,
           },
         }),

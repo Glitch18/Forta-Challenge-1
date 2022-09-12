@@ -1,7 +1,7 @@
 import { Finding, HandleTransaction, TransactionEvent, FindingSeverity, FindingType } from "forta-agent";
 import { FORTA_ADDRESS, CREATE_AGENT_FUNCTION, NETHERMIND_ADDRESS } from "./constants";
 
-function provideHandleTransaction(
+export function provideHandleTransaction(
   agentFunctionAbi: string,
   fortaContractAddress: string,
   nethermindDeployAddress: string

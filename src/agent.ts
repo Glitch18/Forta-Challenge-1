@@ -10,9 +10,9 @@ export function provideHandleTransaction(
     const findings: Finding[] = [];
 
     // filter the transaction logs for createAgent functions from Forta contract
-    const tetherTransferEvents = txEvent.filterFunction(agentFunctionAbi, fortaContractAddress);
+    const botDeployEvents = txEvent.filterFunction(agentFunctionAbi, fortaContractAddress);
 
-    tetherTransferEvents.forEach((transferEvent) => {
+    botDeployEvents.forEach((transferEvent) => {
       // Extract arguments from transaction
       const { agentId, metadata, chainIds, owner } = transferEvent.args;
 
